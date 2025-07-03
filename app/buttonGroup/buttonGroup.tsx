@@ -20,6 +20,7 @@ const reducer = (state: number, action: { type: TYPE }) => {
     case TYPES.DIV:
       return state / 2;
     default:
+      const _: never = action.type;
       return state;
   }
 };
