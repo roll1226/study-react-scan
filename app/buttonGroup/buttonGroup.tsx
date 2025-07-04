@@ -36,6 +36,7 @@ export const ButtonGroup = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-4">
       <p>Count: {count}</p>
+
       <Button onClick={handleAdd}>Add</Button>
       <Button onClick={handleSub}>Subtract</Button>
       <Button onClick={handleMul}>Multiply</Button>
