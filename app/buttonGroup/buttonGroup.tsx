@@ -1,7 +1,7 @@
 import { useCallback, useReducer } from "react";
 import { Button } from "~/components/Button";
-import { TYPES } from "~/constants/actionTypes";
 import type { TYPE } from "~/constants/actionTypes";
+import { TYPES } from "~/constants/actionTypes";
 
 const reducer = (state: number, action: { type: TYPE }) => {
   switch (action.type) {
