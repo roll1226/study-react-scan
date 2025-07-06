@@ -1,13 +1,7 @@
 import { useCallback, useReducer } from "react";
 import { Button } from "~/components/Button";
-
-const TYPES = {
-  ADD: "add",
-  SUB: "sub",
-  MUL: "mul",
-  DIV: "div",
-} as const;
-type TYPE = (typeof TYPES)[keyof typeof TYPES];
+import { TYPES } from "~/constants/actionTypes";
+import type { TYPE } from "~/constants/actionTypes";
 
 const reducer = (state: number, action: { type: TYPE }) => {
   switch (action.type) {
