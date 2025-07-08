@@ -4,5 +4,4 @@ export const TYPES = {
   MUL: "mul",
   DIV: "div",
 } as const;
-
 export type TYPE = (typeof TYPES)[keyof typeof TYPES];
