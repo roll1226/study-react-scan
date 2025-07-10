@@ -26,6 +26,7 @@ export const ButtonGroup = () => {
   const handleSub = useCallback(() => dispatch({ type: TYPES.SUB }), []);
   const handleMul = useCallback(() => dispatch({ type: TYPES.MUL }), []);
   const handleDiv = useCallback(() => dispatch({ type: TYPES.DIV }), []);
+
   return (
     <div className="flex flex-col items-center justify-center h-screen space-y-4">
       <p>Count: {count}</p>
